@@ -1,0 +1,184 @@
+/* styles/SavedScenarios.css */
+.saved-scenarios-container {
+    padding: 20px;
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 32px;
+    color: #1d1160;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.scenarios-section {
+    margin-bottom: 40px;
+    overflow-x: auto; 
+}
+
+.scenarios-section h3 {
+    font-size: 24px;
+    color: #4A2A7A;
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(160, 136, 194, 0.3);
+    padding-bottom: 8px;
+}
+
+.all-scenarios-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.all-scenarios-table th {
+    background-color: #DDA0DD;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+.all-scenarios-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Group rows by same scenario */
+.all-scenarios-table tbody tr:nth-child(3n+1),
+.all-scenarios-table tbody tr:nth-child(3n+2),
+.all-scenarios-table tbody tr:nth-child(3n+3) {
+    background-color: #f9f9f9;
+}
+
+.all-scenarios-table tbody tr:nth-child(6n+4),
+.all-scenarios-table tbody tr:nth-child(6n+5),
+.all-scenarios-table tbody tr:nth-child(6n+6) {
+    background-color: #ffffff;
+}
+
+.all-scenarios-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #D8BFD8;
+    color: #4A2A7A;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(160, 136, 194, 0.05);
+}
+
+.scenario-table-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+.scenario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.scenario-details {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.small-edit-button, .edit-button {
+    background-color: transparent;
+    color: #624CAB;
+    border: 1px solid #624CAB;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.edit-button {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.small-edit-button:hover, .edit-button:hover {
+    background-color: #720e9e;
+    color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .saved-scenarios-container {
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .page-subtitle {
+        font-size: 14px;
+    }
+
+    .scenarios-section h3 {
+        font-size: 20px;
+    }
+
+    .scenario-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .scenario-header h3 {
+        margin-bottom: 10px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .all-scenarios-table th,
+    .all-scenarios-table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .edit-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

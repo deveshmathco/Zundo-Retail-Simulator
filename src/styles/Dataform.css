@@ -1,0 +1,225 @@
+/* DataForm.css */
+.data-form-container {
+    background: radial-gradient(circle, rgba(142, 68, 173, 0.1), rgba(108, 52, 131, 0.08)); /* Gradient background */
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 1200px;
+    width: 95%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    color: #000000;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end; 
+    gap: 10px;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.form-button {
+    padding: 12px 20px;
+    border: 1.5px solid #9972ce;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #C0A9E2;
+}
+.form-group {
+    /* display: flex;
+    justify-content: space-around;
+    gap: 10px; */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #906ec0;
+    border-radius: 8px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    max-width: 300px;
+}
+
+select:focus {
+    outline: none;
+    border-color: #C0A9E2;
+}
+
+.simulation-scope-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 5px;
+    min-width: 200px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #A088C2;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #a77fe3;
+    border-color: #a073e4;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '✓';
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    border-color: #773ad2;
+}
+
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    min-width: 150px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid #7c42cd;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease;
+}
+
+input[type="radio"]:checked {
+    background-color: #7d3fda;
+    border-color: #C0A9E2;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+input[type="radio"]:focus {
+    outline: none;
+    border-color: #C0A9E2;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+input[type="text"]{
+   width: 100%;
+   max-width: 300px;
+   padding: 10px;
+   border: 1px solid #906ec0;
+   border-radius: 8px;
+}
+
+.editing-indicator {
+    background-color: rgba(160, 136, 194, 0.1);
+    border-left: 4px solid #624CAB;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;
+}
+
+.editing-indicator p {
+    color: #4A2A7A;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .data-form-container {
+        padding: 15px;
+        margin: 10px auto;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button-group {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form-button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .radio-group, .simulation-scope-options {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .radio-label, .checkbox-label {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+}

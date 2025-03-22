@@ -1,0 +1,26 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #000000;
+  font-family: sans-serif;
+}
+
+.main-content {
+  padding-top: 80px; /* Add padding to create space below navbar */
+  width: 100%;
+}
+
+/* Responsive adjustments for main content */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding-top: 120px; /* Increased padding for the stacked navbar */
+  }
+}

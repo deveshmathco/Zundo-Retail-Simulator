@@ -1,0 +1,159 @@
+{
+  "scenarios": [
+    {
+      "dataLevel": "Sparse",
+      "optimizationStrategy": "Minimise cost",
+      "simulationScope": [
+        "Prioritize High Margin Items",
+        "Limit to In-Stock Only"
+      ],
+      "scenarioName": "Scenario A",
+      "tableData": [
+        {
+          "brand": {
+            "id": "2",
+            "name": "Brand B"
+          },
+          "active": true,
+          "optimise": true,
+          "min": 0,
+          "slider": 38,
+          "max": 100,
+          "budget": 4500
+        },
+        {
+          "brand": {
+            "id": "5",
+            "name": "Brand E"
+          },
+          "active": false,
+          "optimise": true,
+          "min": 0,
+          "slider": 55,
+          "max": 100,
+          "budget": 3451
+        },
+        {
+          "brand": {
+            "id": "1",
+            "name": "Brand A"
+          },
+          "active": true,
+          "optimise": false,
+          "min": 0,
+          "slider": 19,
+          "max": 100,
+          "budget": 8732
+        },
+        {
+          "brand": {
+            "id": "3",
+            "name": "Brand C"
+          },
+          "active": false,
+          "optimise": false,
+          "min": 0,
+          "slider": 90,
+          "max": 100,
+          "budget": 240
+        }
+      ],
+      "id": "42bb"
+    },
+    {
+      "dataLevel": "",
+      "optimizationStrategy": "Balanced approach",
+      "simulationScope": [
+        "Include Discounts",
+        "Focus on Seasonal Products"
+      ],
+      "scenarioName": "S2",
+      "tableData": [
+        {
+          "brand": {
+            "id": "2",
+            "name": "Brand B"
+          },
+          "active": true,
+          "optimise": false,
+          "min": 4,
+          "slider": 48,
+          "max": 100,
+          "budget": 9000
+        }
+      ],
+      "id": "19f4"
+    },
+    {
+      "id": "7b06",
+      "dataLevel": "",
+      "optimizationStrategy": "Minimise cost",
+      "simulationScope": [],
+      "scenarioName": "wertyutretyui",
+      "tableData": [
+        {
+          "brand": {
+            "id": "4",
+            "name": "Brand D"
+          },
+          "active": false,
+          "optimise": false,
+          "min": 0,
+          "slider": 71,
+          "max": 100,
+          "budget": null
+        },
+        {
+          "brand": {
+            "id": "5",
+            "name": "Brand E"
+          },
+          "active": false,
+          "optimise": false,
+          "min": 0,
+          "slider": 57,
+          "max": 100,
+          "budget": null
+        },
+        {
+          "brand": {
+            "id": "6",
+            "name": "Brand F"
+          },
+          "active": false,
+          "optimise": false,
+          "min": 0,
+          "slider": 0,
+          "max": 100,
+          "budget": null
+        }
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "id": "1",
+      "name": "Brand A"
+    },
+    {
+      "id": "2",
+      "name": "Brand B"
+    },
+    {
+      "id": "3",
+      "name": "Brand C"
+    },
+    {
+      "id": "4",
+      "name": "Brand D"
+    },
+    {
+      "id": "5",
+      "name": "Brand E"
+    },
+    {
+      "id": "6",
+      "name": "Brand F"
+    }
+  ]
+}
